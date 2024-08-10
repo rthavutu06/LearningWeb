@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Lab 12 assignment">
+        <meta name="keywords" content="parallax site">
+        <meta name="author" content="Rakesh Thavutu">
+
+        <style>
+            
+            body, html {
+                height: 100%;
+                background-color: white;
+            }
+
+            .parallaxtophalf {
+                /* The image used */
+                background-image: url('/images/RRRlogo.png');
+
+                /* Full height */
+                height: 100%; 
+
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+                .parallaxbottomhalf {
+                /* The image used */
+                background-image: url('/images/natunatu.gif');
+
+                /* Full height */
+                height: 100%; 
+
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+            @media only screen and (max-device-width: 1366px) {
+                .parallax {
+                    background-attachment: scroll;
+                }
+            }
+            
+            div.rrr {
+                border: solid 1px #424542;
+                box-shadow: 1px 1px #e7dfe7,
+                -1px -1px #e7dfe7,
+                1px -1px #e7dfe7,
+                -1px 1px #e7dfe7,
+                0 -2px #9c9a9c,
+                -2px 0 #7b757b,
+                0 2px #424542;
+                width: 25%;
+                height: auto;
+                background: #362c19;
+                background: linear, left top, left bottom, color-stop(0%,#04009d), color-stop(100%,#06004d);
+
+                border-radius: 7px;
+                
+                padding: 0.5em;
+                color: rgb(239, 241, 255);
+                text-shadow: 2px 2px #212421,
+                1px 1px #212021;
+                font-family: Noto Sans Egyptian Hieroglyphs;
+                font-size: 20px;
+                font-weight: normal;
+                margin: 5px 0;
+            }
+
+            
+            
+            
+            
+        </style>
+    </head>
+
+    <body>
+
+        <div class="rrr" style="width:99%; text-align: center;">
+            "RRR," directed by S.S. Rajamouli, is a genre-bending epic that clocks in at just over three hours and is filled with exhilarating action sequences, show-stopping musical numbers, and a slew of wild animals.  Set in the 1920s and spoken in Telugu, the film follows the unlikely friendship of Alluri Sitarama Raju (Ram Charan) and Komaram Bheem (N.T. Rama Rao Jr.), two Indian freedom fighters who band together to revolt against the British Raj. 
+        </div>
+        
+        <div class="parallaxtophalf"></div>
+
+
+        <div class="rrr" style="float: right;">
+            The song Naatu Naatu from the hit Telugu film RRR became the first Indian film song to win an Academy Award. The smash hit won Best Original Song at the 95th Academy Awards, defeating heavyweights such as Lady Gaga and Rihanna. Scroll down to see a teaser for "Natu Natu."
+        </div>
+        
+        <div class="parallaxtophalf"></div>
+
+        <div></div>
+        
+        <div class="parallaxbottomhalf"></div>
+        
+        <div class="rrr" style="width:99%; text-align: center;">
+            Finally, the film's title is RRR, and it is directed by S. S. Rajamouli. If you haven't seen it yet, go watch it right now.
+        </div>
+                
+    </body>
+</html>
