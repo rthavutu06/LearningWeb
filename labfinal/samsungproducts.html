@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Samsung Products</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="https://pen.eiu.edu/rthavutu/labfinal/index.html">Home</a></li>
+            <li><a href="https://pen.eiu.edu/rthavutu/labfinal/about.html">About Us</a></li>
+            <li><a href="https://pen.eiu.edu/rthavutu/labfinal/samsungproducts.html">Products</a></li>
+            <li><a href="https://pen.eiu.edu/rthavutu/labfinal/contactus.html">Contact Us</a></li>
+          </ul>
+    </nav>
+  </header>
+  
+  <section class="product-section">
+    <h2>Explore various SAMSUNG products</h2>
+    <div class="products">
+      <div class="item1"><a href="#" class="product">
+        <img src="https://img.global.news.samsung.com/global/wp-content/uploads/2019/05/Hands-on-Galaxy-Buds_main1FFFgif.gif">
+        <h3>Galaxy buds</h3>
+        </a></div>
+      <div class="item2"><a href="#" class="product">
+        <img src="https://cdn.dribbble.com/users/418336/screenshots/7174877/media/0d83f3fc4795196218731b14c44d96b0.gif" alt="Jeans">
+        <h3>Galaxy Watches</h3>
+      </a></div>
+      <div class="item3"><a href="#" class="product">
+        <img src="https://portfolio.lablob.com/wp-content/uploads/2017/04/ezgif-2-3b3467a4a6.gif" alt="Casuals">
+        <h3>Home Appliances</h3>
+      </a></div>
+      <div class="item4"><a href="#" class="product">
+        <img src="https://img.global.news.samsung.com/global/wp-content/uploads/2019/05/odyssey_main10gif.gif" alt="Winter Wear">
+        <h3>Laptops</h3>
+      </a></div>
+    </div>
+  </section>
+</body>
+</html>
+<style>
+    
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+
+.right-align {
+  display: flex;
+  align-items: center;
+}
+
+.right-align a {
+  margin-left: 1rem;
+}
+
+.product-section {
+  padding: 2rem;
+  background-color: white;
+  background-image: url("https://w0.peakpx.com/wallpaper/486/831/HD-wallpaper-samsung-logo-galaxy-logo-white-edge-samsung-s6-s7-phone-thumbnail.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  background-attachment: fixed;
+}
+.item1 { grid-area: left1; }
+.item2 { grid-area: right1; }
+.item3 { grid-area: left2; }
+.item4 { grid-area: right2; }
+.products {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: space-between;
+    grid-template-areas:
+    'left1 right1'
+    'left2  right2';
+}
+
+.product {
+  display: block;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  width: calc(50%);
+  border: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+
+
+
+.category-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.category {
+  margin: 20px;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+
+.category img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.category h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.right-align {
+  display: flex;
+  align-items: center;
+}
+
+.right-align a:first-child {
+  margin-right: 20px;
+}
+.btn:active {
+  background-color: #222;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+
+.btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+
+/* Footer styles */
+footer {
+  background
+
+</style>

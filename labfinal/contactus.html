@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ContactUs</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px; 
+  padding: 10px;
+background-color: whitesmoke;
+    
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+<script>
+function myFunction() {
+  var fname = document.forms["contactForm"]["firstname"].value;
+  var lname = document.forms["contactForm"]["lastname"].value;
+  var email = document.forms["contactForm"]["emailid"].value;
+  var subject = document.forms["contactForm"]["subject"].value;
+  if (fname == "" || lname == "" || email == "" || subject == "") {
+    alert("Please fill out all fields.");
+    return false;
+  }
+  else {
+    alert("Request accepted. We will get back to you soon.");
+    return true;
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Submit your query here:</p>
+  </div>
+  <div class="row">
+   
+    <div class="column">
+      <form name="contactForm" action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name" required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name" required>
+        <label for="email">Email Id</label>
+        <input type="text" id="email" name="emailid" placeholder="Your email id" required>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write your query here.." style="height:170px" required></textarea>
+          <input type="submit" value="Submit" onclick="return myFunction()">
+      </form>
+    </div>
+       <div class="column">
+      <img src="https://pen.eiu.edu/rthavutu/labfinal/images/samsungcontactus.gif" style="width:100%">
+    </div>
+  </div>
+</div>
+</html>

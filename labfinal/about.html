@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AboutPage</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<h1 style="color:black; font-family: fantasy; font-size: 50px; text-align: center;">SAMSUNG</h1>
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>Samsung Electronics is constantly innovating for the future. We delve into the unknown in order to discover technologies that will help people all over the world live happier, healthier lives. We foster a culture of limitless possibilities. Our customers' deep trust and loyalty drive us to constantly grow and lead innovation. We are expanding our highly differentiated mobile devices while also focusing on next-generation innovation. Every researcher and developer on the planet is working to discover the next game-changing technologies that will create new values and make the world a better place.
+</p>
+</div>
+
+<h2 style="text-align:center">Get to know Samsung's CEOs</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://pen.eiu.edu/rthavutu/labfinal/images/s3.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Han, Jong Hee</h2>
+        <p class="title">Vice Chairman & CEO [2022~Present]</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://pen.eiu.edu/rthavutu/labfinal/images/s4.jpeg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Kyung, Kye Hyun</h2>
+        <p class="title">President & CEO [2022~Present]</p>
+      </div>
+    </div>
+  </div>
+    
+      <div class="column">
+    <div class="card">
+      <img src="https://pen.eiu.edu/rthavutu/labfinal/images/s5.gif" alt="Mike" style="width:100%">
+      <div class="container">
+          <h2>Fortune global top company, Samsung</h2>
+        <p>With the success of its electronics business, Samsung has been recognised globally as an industry leader in technology and now ranked as a top 10 global brand.
+</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
