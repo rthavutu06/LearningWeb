@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lab 13 - Social Media Integration and APIs</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Lab 14">
+        <meta name="keywords" content="Web development, Lab 13">
+        <meta name="author" content="Rakesh Thavutu">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta property="og:site_name" content="Snapchat" />
+    <meta property="og:title" content="The fastest way to share a moment!" />
+        
+        <style>
+            
+            body {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            }
+            
+            header {
+                text-align: center;
+            }
+            
+            nav {
+                float: right;
+            }
+            
+            nav li {
+                padding: 1em;
+                display: inline;
+            }
+            
+            .searchbar {
+                width: 96%;
+                height: auto;
+                padding: 1% 1% 1% 1%;
+                margin: 1% 1% 1% 1%;
+                background-color: coral;
+            }
+            
+            .sectionsingle {
+                width: 96%;
+                height: auto;
+                padding: 1% 1% 1% 1%;
+                margin: 1% 1% 1% 1%;
+                background-color: darkseagreen;
+                
+            }
+            .sectionpair {
+                width: 46%;
+                height: 575px;
+                padding: 1% 1% 1% 1%;
+                margin: 1% 1% 1% 1%;
+                background-color: burlywood;
+                float: left;
+            }
+
+            article {
+                width: 29.33%;
+                padding: 1% 1% 1% 1%;
+                margin: 1% 1% 1% 1%;
+                background-color: lightgray;
+                float: left;
+                height: auto;
+            }
+            
+            h2 {
+                text-align: center;
+            }
+            
+            h3 {
+                text-align: center;
+            }
+            
+            h4 {
+                text-align: center;
+            }
+            
+            .iframecenter {
+                max-width: 500px;
+                max-height: 500px;
+                margin-right: auto;
+                margin-left: auto;
+                display: block;
+            }
+            
+        </style>
+    </head>    
+    <body>
+        
+        <header>
+            <h1>Social Media Integration and APIs</h1>
+            
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>    
+        </nav>
+        
+        <main>
+            <br>
+            <br>
+            <div class="searchbar">
+                
+                <!-- Place a Google custom search bar here. -->
+             <script async src="https://cse.google.com/cse.js?cx=47ab7b96d2305410e"></script>
+            <div class="gcse-search"></div>
+            </div>
+            
+            <section class="sectionsingle">
+                <h2>A Google Map to My Favorite Restuarant!</h2>
+                
+                <!-- Place a Google Map pinpointing your favorite restaurant here. -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.443348542759!2d-88.2338884246133!3d40.110122271490496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880cd73f358a9815%3A0x6d6cbdca0a538d1a!2sSignature%20Grill!5e0!3m2!1sen!2sus!4v1681437942916!5m2!1sen!2sus" width="1450px" height="100px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+            </section>
+            
+            <section class="sectionpair">
+                <h3>A YouTube Video</h3>
+                
+                <div class="iframecenter">
+                
+                    <!-- Place a weather widget here displaying the weather of your home town or other favorite place. -->
+                    <iframe width="560" height="500" src="https://www.youtube.com/embed/iuk77TjvfmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                </div>
+                
+            </section>
+            
+            <section class="sectionpair">
+                <h3>My Favorite Facebook Feed</h3>
+                
+                <div class="iframecenter">
+                
+                    <!-- Place your favorite Facebook feed here.  It must be a public one to ensure it shows up.  Make surethat the width and height attributes are both 500 pixels. --> 
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIamSRK%2F&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    
+                </div>
+                
+            </section>
+            
+            <article>
+                <h4>Extra Credit API 1</h4>
+                  <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FIamSRK%2F&width=450&layout&action&size&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </article>
+            
+            <article>
+                <h4>Extra Credit API 2</h4>
+                 <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto%2F%3Ffbid%3D271269321022580%26set%3Da.271269297689249&layout=button_count&size=small&width=77&height=20&appId" width="77" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                
+            </article>
+                
+            <article>
+                <h4>Extra Credit API 3</h4>
+                <script>
+                  // Load the SDK asynchronously
+                  (function (d, s, id) {
+                    var js,
+                      sjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "https://sdk.snapkit.com/js/v1/create.js";
+                    sjs.parentNode.insertBefore(js, sjs);
+                  })(document, "script", "snapkit-creative-kit-sdk");
+                </script>
+                <div class="snapchat-creative-kit-share" width="100" height="100"></div>
+            </article>
+        
+        </main>
+                    
+    </body>            
+            
+</html>
